@@ -18,6 +18,7 @@ enum GameState {
 
 global.gameState = GameState.MainMenu;
 
+global.isPaused = false; // Separate pause variable
 global.roomChangable = true;
 
 global.playerData = 

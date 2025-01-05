@@ -1,4 +1,12 @@
 
+
+if (keyboard_check_pressed(vk_escape)) 
+{
+    global.isPaused = !global.isPaused; // Toggle the pause state
+    instance_create_layer(0,0,"instance_ui",obj_pauseMenu);
+    
+}
+
 // Updated switch-case logic
 switch (global.gameState) 
 {
@@ -8,6 +16,7 @@ switch (global.gameState)
 
     case GameState.Paused:
         // Pause logic (e.g., freeze objects, show pause menu)
+    
         break;
 
     case GameState.GameOver:

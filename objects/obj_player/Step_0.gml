@@ -1,3 +1,6 @@
+if (global.isPaused) {
+    exit; // Stop updating the object if the game is paused
+}
 
 #region Keyboard Checks
 var rightKEy = keyboard_check(ord("D"));

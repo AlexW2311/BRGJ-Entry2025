@@ -1,3 +1,6 @@
+if (global.isPaused) {
+    exit; // Stop updating the object if the game is paused
+}
 
 // Move the projectile in the defined direction
 
